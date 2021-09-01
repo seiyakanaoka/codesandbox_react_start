@@ -34,6 +34,7 @@ const onClickAdd = () => {
     //buttonタグ生成
     const backButton = document.createElement("button");
     backButton.innerText = "戻す";
+
     //戻すボタンクリック時のイベント
     backButton.addEventListener("click", () => {
       deleteFromCompleteList(backButton.parentNode);
@@ -49,7 +50,7 @@ const onClickAdd = () => {
       addBackTarget.appendChild(completeButton);
       addBackTarget.appendChild(deleteButton);
 
-      document.getElementById("incomplete-list").appendChild(addTarget);
+      document.getElementById("incomplete-list").appendChild(addBackTarget);
     });
 
     //divタグの子要素に各要素を設定
